@@ -34,7 +34,7 @@ public class Main {
             int startPosition = -1;
             int endPosition = -1;
 
-            while (byteBuffer.hasRemaining() && byteBuffer.remaining() >= 4) { // Ensure there are at least 4 bytes left
+            while (byteBuffer.hasRemaining() && byteBuffer.remaining() >= 4) { //0xCAFEBABE
                 int current = byteBuffer.getInt();
                 if (current == magicNumber) {
                     if (startPosition != -1) {
